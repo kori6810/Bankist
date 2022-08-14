@@ -295,3 +295,20 @@ h2 {
 .timer {
   font-weight: 600;
 }
+
+
+.guide{
+  position: absolute;
+  width: 60rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color:#ccc;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  
+}
+.guide h1{
+  margin-bottom: 2rem;
+  text-align: center;
+}

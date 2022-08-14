@@ -87,6 +87,7 @@ const labelSumOut = document.querySelector('.summary__value--out');
 const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
 
+const guide = document.querySelector('.guide');
 const containerApp = document.querySelector('.app');
 const containerMovements = document.querySelector('.movements');
 
@@ -247,6 +248,7 @@ const funcLogOut = ()=>{
     if (time===0){
       clearInterval(logOutTimer)
       labelWelcome.textContent='Login to get started'
+      guide.style.opacity = 1
       containerApp.style.opacity = 0
 
 
@@ -269,6 +271,7 @@ btnLogin.addEventListener('click', function(e){
     //////////welcome message & displaying UI
     labelWelcome.textContent = `Welcome ${currentAccount.owner.split(' ')[0]}`
     containerApp.style.opacity = 1
+    guide.style.opacity = 0
      
     updateUI(currentAccount)
     const now = new Date()
